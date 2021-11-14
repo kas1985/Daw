@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar pedido</title>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    
+    <table class="default" id="encabezado">
+        <tr>
+            <td>
+                <a href="index.html">
+                    <h1>MIGAS AMIGAS</h1>
+                </a>                
+            </td>  
+            <td></td>            
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="index.html">
+                     <h1>ES/PT</h1>
+                </a>    
+            </td>              
+        </tr>
+        <tr id="navegador">
+            <td></td>
+            <td>                    
+                <a href="panaderia.html">
+                    <img src="assets/Imagenes/pan.jpg" alt="icono de pan">                    
+                </a>
+                <p>Panaderia</p>
+            </td>
+            <td>
+                <a href="pasteleria-bolleria.html">                    
+                    <img src="assets/Imagenes/bolleria.jpg" alt="icono de un bollo">                    
+                </a>
+                <p>Pasteleria</p>
+            </td>
+            <td>
+                <a href="empanadas.html">
+                    <img src="assets/Imagenes/empanadilla.jpg" alt="icono de empanadilla">                    
+                </a>
+                <p>Empanadillas</p>
+            </td>
+            <td>
+                <a href="formulario.html">
+                    <img src="assets/Imagenes/formulario.jpg" alt="icono de formulario">                    
+                </a>
+                <p>Realizar Pedido</p>
+            </td>
+            <td></td>
+        </tr>
+</table>
+
+
+<table class="defaul" id="contenido">
+    <tr>
+        <td>
+            <h2>Tienda online de Migas Amigas</h2>
+            <p>Bienvenido a Migas Amigas, si deseas realizar un pedido solo tienes que 
+                rellenar tus datos e indicarnos las cantidades que quieres recibir de nuestros panes.<br> 
+                ¡¡Nosotros nos encargaremos de llevartelos a casa!!</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form  action="#" method="post">
+                <fieldset id="cliente">
+                    <legend>Datos de contacto</legend>
+                    <label for="nom">Nombre </label><input type="text" name="nombre" id="nom"><br>
+                    <label for="ape">Apellidos </label><input type="text" name="apellidos" id="ape"><br>
+                    <label for="mail">Email </label><input type="email" name="mail" id="mail"><br>
+                    <label for="tel">Telefono </label><input type="tel" name="tel" id="tel"><br>
+                    <label for="dir">Direccion </label><input type="text" name="dir" id="dir">
+                </fieldset>
+                <fieldset id="pedido">
+                    <legend>Pedido</legend>
+                    <fieldset id="panaderia">
+                        <legend>Panaderia</legend>
+                        <fieldset id="panField1">
+                            <label for="brioch">Pan brioche </label><input type="number" name="brioch" id="brioch" min="0"><br>
+                            <label for="cereales">Pan de cereales </label><input type="number" name="cereales" id="cereales" min="0"><br>
+                            <label for="frances">Pan frances</label><input type="number" name="frances" id="frances" min="0">
+                        </fieldset>
+                        <fieldset id="panField2">                    
+                            <label for="integral">Pan integral </label><input type="number" name="integral" id="integral" min="0"><br>
+                            <label for="masaMadre">Pan de masa madre </label><input type="number" name="masaMadre" id="masaMadre" min="0"><br>                    
+                            <label for="molde">Pan de molde </label><input type="number" name="molde" id="molde" min="0">
+                        </fieldset>
+                    </fieldset>
+                    <fieldset id="pasteleria">
+                        <legend>Pasteleria</legend>
+                        <label for="crema">Bollito de crema </label><input type="number" name="crema " id="crema" min="0"><br>
+                        <label for="donut">Donut </label><input type="number" name="donut" id="donut" min="0"><br>
+                        <label for="napolitana">Napolitana </label><input type="number" name="napolitana" id="napolitana" min="0"><br>
+                        <label for="palmera">Palmera de chocolate </label><input type="number" name="palmera" id="palmera" min="0">
+                    </fieldset>
+                    <fieldset id="empanadillas">
+                        <legend>Empanadillas</legend>
+                        <label for="verduras">De verduras</label><input type="number" name="verduras" id="verduras" min="0"><br>
+                        <label for="atun">De atun</label><input type="number" name="atun" id="atun" min="0"><br>
+                        <label for="carne">De carne</label><input type="number" name="carne" id="carne" min="0"><br>
+                        <label for="pollo">De pollo</label><input type="number" name="pollo" id="pollo" min="0">
+                    </fieldset>
+                    <fieldset id=coment>
+                        <label for="coment">¿Quieres añadir algo?</label><br>
+                        <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Añade aquí tus comentarios..."></textarea>
+                    </fieldset>
+                </fieldset>
+                <input type="submit" value="Realizar pedido">
+            </form>
+        </td>                
+    </tr>
+</table>
+
+
+<table class="default" id="pie">
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <img src="assets/Imagenes/localizacion.png" alt="localizacion de la tienda" >
+        </td>
+        <td></td>
+        <td>
+            <h3>Contacto</h3>
+            <p>
+                Panaderia Migas amigas <br>
+                C. Nogalina, 2, bajo <br>         
+                37254 Mieza, Salamanca <br>
+                Teléfono +34 649293402
+            </p>
+        </td>            
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+/***** CSS general ******/
+body {
+    min-width: 1920px;
+    min-height: 1080px;
+    background-color: #F48024;
+    background: linear-gradient(180deg, rgba(255,117,0,1) -30%, rgba(244,149,36,1) 130%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+table {
+    table-layout: fixed;
+    width: 70%;
+    margin: 0 auto;   
+    font-size: 16px; 
+    
+}
+table tr {    
+    width: 100%;
+}
+
+/***** CSS del encabezado ******/
+table#encabezado {    
+    background-color: rgba(255, 255, 0, 0.664);   
+}
+
+table#encabezado {
+    padding-bottom: 20px;
+    border-bottom: outset 5px #F48024;
+}
+
+table#encabezado img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+table#encabezado tr#navegador td{
+    font-size: 20px;    
+    
+    
+}
+
+table#encabezado tr#navegador td img {
+    border-style: outset;
+    border-width: 3px;
+    border-color: #F48024;
+}
+
+table#encabezado tr#navegador td img:hover {
+    border-style: inset;
+    border-width: 3px;
+    border-color: #F48024;
+}
+
+/***** CSS del contenido ******/
+table#contenido {     
+    background-color: white;
+    min-height: 500px;    
+}
+
+table#contenido td{
+    padding: 20px;
+}
+
+table#contenido img {
+        width: 250px;
+        height: 250px;
+        float: left;
+        margin-right: 10px;    
+}
+
+/****** CSS del pie *****/
+table#pie {    
+    background-color: rgba(163, 163, 158, 0.925);
+    border-top: inset 5px rgba(163, 163, 158, 0.925);    
+}
+
+table#pie img {
+    width: 300px;
+    height: 200px;
+}
+
+/****** CSS del formulario ******/
+form {
+    width: 60%;
+    margin: auto;
+}
+
+form label, form input, form fieldset {
+    margin: 10px;
+}
+
+form label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+form input[type="number"] {
+    width: 60px;
+}
+
+fieldset#panaderia {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+fieldset#pasteleria, fieldset#empanadillas {
+    border: none;
+}
+
+fieldset#panField1, fieldset#panField2 {
+    border: none;
+    display: inline-block;
+    width: 43%;
+}
+
+fieldset#panField1 label, fieldset#panField2 label {
+    width: 60%;
+}
+
+fieldset#pasteleria, fieldset#empanadillas {
+    display: inline-block;
+    width: 43%;
+}
+
+fieldset#pasteleria label, fieldset#empanadillas label {
+    width: 60%;
+}
+
+fieldset#coment {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+form textarea {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+form input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    float: right;
+}
